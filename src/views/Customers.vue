@@ -37,7 +37,7 @@ export default {
         paymentMethod: '',
         amount: 0,
       };
-      // Show the transaction form/modal and pass the transaction object to it
+      // Show the transaction form and pass the transaction object to it
       this.$router.push({ name: 'TransactionForm', params: { customerId } });
     },
     getTotalSavings(customerId) {

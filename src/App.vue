@@ -4,7 +4,9 @@
     <router-link to="/Dashboard">Dashboard</router-link>    |
     <router-link to="/products">Products</router-link>
   </nav>
-  <router-view/>
+  <main>
+    <router-view/>
+  </main>
 </template>
 
 <style>

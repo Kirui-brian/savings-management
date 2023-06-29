@@ -1,8 +1,8 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Customers from '../views/Customers.vue'
-import TransactionForm from '../components/TransactionForm.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Products from '../views/Products.vue'
+import TransactionForm from '../components/TransactionForm.vue'
 
 const routes = [
   {
@@ -28,7 +28,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
 })
 

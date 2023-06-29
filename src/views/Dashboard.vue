@@ -10,11 +10,15 @@ export default {
     name: 'Dashboard',
     computed: {
         getTotalSavingsAcrossUsers() {
-            return this.$root.transactions.reduce(
-                (total, transaction) => total + transaction.amount,
-                0
-            );
+            if (this.$root.transactions) {
+                return this.$root.transactions.reduce(
+                    (total, transaction) => total + transaction.amount,
+                    0
+                );
+            }
+            return 0; // Default value if transactions is undefined
         },
+
     },
 };
 </script>
